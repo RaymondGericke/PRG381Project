@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container text-center">
+    <form th:action="@{getAllUsers}" method="get">
+      <div class="form-group row">
+        <button class="btn btn-primary" type="submit">Get All Users</button>
+      </div>
+    </form>
+    <form th:action="@{deleteUserById}" method="get">
+      <div class="form-group row">
+        <input class="form-control" type="text" th:field="*{studentId}">
+        <button class="btn btn-primary" type="submit">Delete user by ID</button>
+      </div>
+    </form>
+    <form th:action="@{updateUserById}" method="get">
+      <div class="form-group row">
+        <input class="form-control" type="text" th:field="*{studentId}">
+        <button class="btn btn-primary" type="submit">Update user by ID</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

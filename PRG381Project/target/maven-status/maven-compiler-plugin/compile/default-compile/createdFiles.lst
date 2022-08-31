@@ -1,0 +1,6 @@
+com\project\PRG381Project\service\UserService.class
+com\project\PRG381Project\api\UserController.class
+com\project\PRG381Project\Prg381ProjectApplication.class
+com\project\PRG381Project\model\User.class
+com\project\PRG381Project\dao\FakeUserDataAccessService.class
+com\project\PRG381Project\dao\UserDao.class
